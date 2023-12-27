@@ -42,13 +42,13 @@
    <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
  
    <!-- Template Main CSS File -->
-   <link href="assets/css/main.css" rel="stylesheet">
- 
+   
    <script src="https://cdn.tailwindcss.com"></script>
-
+   
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <link href="assets/css/main.css" rel="stylesheet">
    
  </head>
  
@@ -56,7 +56,7 @@
 <!------ Include the above in your HEAD tag ---------->
   
   <!-- ======= Header ======= -->
-  <header id="header" style="width: 100vw; padding: 0;" class="header  fixed-top" data-scrollto-offset="0">
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center">
 
       <a href="index.html" class="logo scrollto">
@@ -68,9 +68,23 @@
         </h1>
       </a>
 
-      <a href="index.html" style="background-color: #264c72; color: white; padding: 4px 8px; border-radius: 8px; text-decoration: none;margin-left: auto;" class="logo">
-        <p style="font-size: large;">Return</p>
-      </a>
+      <nav id="navbar" style="margin: auto 0 auto auto;" class="navbar">
+        <ul>
+          <button id="modal-button" type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#exampleModalCenter">
+            button
+          </button>
+  
+            <li><a class="nav-link scrollto" href="index.html#home"><strong><span>Home</span></strong></a></li>
+            <li><a class="nav-link scrollto" href="index.html#about"><strong>About</strong></a></li>
+            <!-- <li><a class="nav-link scrollto" href="index.html#catalog"><strong>Catalog</strong></a></li> -->
+            
+            <li><a href="/catalog.html" class="nav-link scrollto"><strong>Products</strong></a></li>
+            <li> <a  href="index.html#contact" class="nav-link scrollto"><strong>Contact Us</strong></a>
+            </li>
+  
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav><!-- .navbar -->
   
     </div>
   </header><!-- End Header -->
